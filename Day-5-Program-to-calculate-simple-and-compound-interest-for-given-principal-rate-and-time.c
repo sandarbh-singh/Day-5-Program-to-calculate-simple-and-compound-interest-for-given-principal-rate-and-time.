@@ -8,7 +8,7 @@ int main() {
     double simple_interest, compound_interest;
 
     printf("Enter Principal, Rate (in %%), and Time (in years): ");
-    scanf_s("%lf %lf %lf", &principal, &rate, &time);
+    scanf("%lf %lf %lf", &principal, &rate, &time);
 
     simple_interest = (principal * rate * time) / 100.0;
     compound_interest = principal * pow((1.0 + rate / 100.0), time) - principal;
